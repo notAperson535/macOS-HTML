@@ -1,0 +1,38 @@
+body{
+    background-image: url("img/background.jpg");
+    overflow: hidden;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .2s ease;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+
+.dockcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.dock{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin: 0;
+    padding: 2px;
+    box-shadow: inset 0 0 0 .2px hsla(0, 0%, 96%,.7),0 0 0 .2px hsla(0, 0%, 13%,.7),#0000004d 2px 5px 19px 7px;
+    background-color: hsla(240, 24%, 100%,.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.dockicons{
+    border-radius: 3px;
+    width:  60px;
+    margin: 5px 3px;
+}
