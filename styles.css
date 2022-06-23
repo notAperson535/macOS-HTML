@@ -36,3 +36,54 @@ body{
     width:  60px;
     margin: 5px 3px;
 }
+
+.app{
+    position: fixed;
+    box-shadow: 1px 10px 50px #969696;
+    border: .5px solid #7698a9;
+    border-radius: 10px;
+    background: lightgray;
+    overflow: hidden;
+    width: 60%;
+    height: 75%;
+    top: 8%;
+    left: 20%;
+    transition: all .17s cubic-bezier(.85,.14,.14,.85), opacity 85ms linear;
+    z-index: 1;
+}
+
+.appheader{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 7.5px 10px;
+}
+
+.close{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ff5f57;
+    border: 1px solid #e4433b;
+    margin: 0px 5px;
+}
+
+.minimize{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #febc2e;
+    border: 1px solid #c29c56;
+    margin: 0px 5px;
+}
+
+.maximize{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #29c840;
+    border: 1px solid #25a32d;
+    margin: 0px 5px;
+}
