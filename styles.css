@@ -61,6 +61,10 @@ body{
     padding: 7.5px 10px;
 }
 
+.safariurlarea{
+    position: absolute;
+}
+
 .close{
     width: 10px;
     height: 10px;
@@ -87,3 +91,10 @@ body{
     border: 1px solid #25a32d;
     margin: 0px 5px;
 }
+
+.appIframe{
+    height: calc(100% - 44px);
+    min-height: calc(100% - 44px);
+    width: 100%;
+    border-width: 0px;
+  }
