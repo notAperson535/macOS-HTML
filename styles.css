@@ -48,12 +48,12 @@ body{
     height: 75%;
     top: 8%;
     left: 20%;
-    transition: all .17s cubic-bezier(.85,.14,.14,.85), opacity 85ms linear;
+    /*transition: all .17s cubic-bezier(.85,.14,.14,.85), opacity 85ms linear;*/
     z-index: 1;
 }
 
 .appheader{
-    width: 100%;
+    width: calc(100% - 20px);
     height: 30px;
     background-color: white;
     display: flex;
@@ -89,7 +89,7 @@ body{
 }
 
 .safariurlarea{
-    width: calc(100% - 80px);
+    width: calc(100% - 65px);
     display: flex;
     justify-content: center;
 }
@@ -97,7 +97,7 @@ body{
 .safariurlbar{
     height: 30px;
     margin: 0;
-    min-width: 50%;
+    min-width: 60%;
     border-radius: 7.5px;
     border: none;
     background-color: #D7D7D7;
@@ -108,4 +108,60 @@ body{
     min-height: calc(100% - 44px);
     width: 100%;
     border-width: 0px;
+}
+
+.resizer {
+    position: absolute;
+    width: 10px;
+    height: 10px;
   }
+  .resizer.top-left {
+    top: -1px;
+    left: -1px;
+    cursor: nw-resize;
+    z-index: 2;
+  }
+  .resizer.top-right {
+    top: -1px;
+    right: -1px;
+    cursor: ne-resize;
+    z-index: 2;
+  }
+  .resizer.bottom-left {
+    bottom: -1px;
+    left: -1px;
+    cursor: sw-resize;
+    z-index: 2;
+  }
+  .resizer.bottom-right {
+    bottom: -1px;
+    right: -1px;
+    cursor: se-resize;
+    z-index: 2;
+  }
+  .resizer.top{
+    top: -1px;
+    cursor: n-resize;
+  }
+  .resizer.left{
+    left: -1px;
+    cursor: e-resize;
+  }
+  .resizer.bottom{
+    bottom: -1px;
+    cursor: s-resize;
+  }
+  .resizer.right{
+    right: -1px;
+    cursor: e-resize;
+  }
+  .resizertopbottom{
+    width: 100%;
+    z-index: 1;
+    height: 5px;
+  }
+  .resizerleftright{
+    height: 100%;
+    z-index: 1;
+    width: 5px;
+}
