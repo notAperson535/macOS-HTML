@@ -1,4 +1,5 @@
 var safariIframe = document.getElementsByClassName('safariappIframe')[0];
+const safaritext = document.getElementsByClassName("safariURL")[0];
 var urlList = new Array();
 var pos = 0;
 
@@ -6,7 +7,6 @@ window.onload = function() {
     goToPage(document.getElementById("URL").value)
 };
 
-const safaritext = document.getElementsByClassName("safariURL")[0];
 safaritext.addEventListener("keyup", ({key}) => {
     if (key === "Enter") {
      goToPage(document.getElementById("URL").value);

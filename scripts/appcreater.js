@@ -6,7 +6,14 @@ appname = "safari"
 
       function dragElement() {
           var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-          appheader.onmousedown = dragMouseDown;
+          appheader.addEventListener("mousedown", ()=>{
+            if(event.target.closest(".safariURL")){
+              return;
+            }
+            else{
+            dragMouseDown();
+            }
+          });
           }
         
           function dragMouseDown(e) {
