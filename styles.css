@@ -102,6 +102,7 @@ body{
     border: none;
     background-color: #D7D7D7;
     padding: 0px 5px;
+    text-align: center;
 }
 
 .safariurlbar:focus::before{
@@ -111,6 +112,13 @@ body{
 
 .safariurlbar:focus{
   border-radius: 6.25px;
+}
+
+.safarireloadimg{
+  margin-left: -25px;
+  width: 15px;
+  height: 17.5px;
+  margin-top: 6.25px;
 }
 
 .appIframe{

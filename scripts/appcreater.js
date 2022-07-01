@@ -7,10 +7,7 @@ appname = "safari"
       function dragElement() {
           var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
           appheader.addEventListener("mousedown", ()=>{
-            if(event.target.closest(".safariURL")){
-              return;
-            }
-            else{
+            if(!event.target.closest(".safariURL") && !event.target.closest(".safarireloadimg")){
             dragMouseDown();
             }
           });
