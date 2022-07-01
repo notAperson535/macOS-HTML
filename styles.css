@@ -101,11 +101,12 @@ body{
     border-radius: 7.5px;
     border: none;
     background-color: #D7D7D7;
+    padding: 0px 5px;
 }
 
-.safariurlbar:focus{
+.safariurlbar:focus::before{
   outline: 0;
-  border: 2px solid blue;
+  border: 5px solid #5984e1;
 }
 
 .appIframe{
