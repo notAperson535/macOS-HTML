@@ -106,7 +106,11 @@ body{
 
 .safariurlbar:focus::before{
   outline: 0;
-  border: 5px solid #5984e1;
+  border: solid #5984e1;
+}
+
+.safariurlbar:focus{
+  border-radius: 6.25px;
 }
 
 .appIframe{
