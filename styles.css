@@ -12,6 +12,16 @@ body{
     height: 100%;
 }
 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+*{
+  font-family: San Francisco;
+}
+
 .dockcontainer{
     display: flex;
     justify-content: center;
@@ -92,6 +102,11 @@ body{
     width: calc(100% - 65px);
     display: flex;
     justify-content: center;
+}
+
+.safariforwardandback{
+  width: 25px;
+  margin-left: 10px;
 }
 
 .safariurlbar{
