@@ -10,3 +10,9 @@ launchpadicon.addEventListener("click", ()=>{
 		launchpad.style.display = "flex"
 	}
 })
+
+window.addEventListener('mouseup', function(e) {
+	if(event.target.closest(".launchpad") && !event.target.closest(".launchpadentry img")){
+		launchpad.style.display = "none"
+	}
+});
