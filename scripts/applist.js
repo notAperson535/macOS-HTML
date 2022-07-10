@@ -1,0 +1,1 @@
+createappwithdockicon("messages", "https://bluebubbles.app/web/", "img/messages.png", "Messages")

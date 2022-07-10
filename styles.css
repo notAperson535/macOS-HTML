@@ -97,7 +97,7 @@ body{
 
 .app{
     position: fixed;
-    box-shadow: 1px 10px 50px #969696;
+    box-shadow: 0px 8.5px 10px rgba(0, 0, 0, .28);
     border: .5px solid #7698a9;
     border-radius: 10px;
     background: lightgray;
@@ -106,7 +106,8 @@ body{
     height: 75%;
     top: 8%;
     left: 20%;
-    /*transition: all .17s cubic-bezier(.85,.14,.14,.85), opacity 85ms linear;*/
+    transition: all .17s cubic-bezier(.85,.14,.14,.85), opacity 80ms linear;
+    display: none;
     z-index: 1;
 }
 
@@ -146,10 +147,22 @@ body{
   height: 10px;
   min-width: 10px;
   min-height: 10px;
-    border-radius: 10px;
-    background-color: #29c840;
-    border: 1px solid #25a32d;
-    margin: 0px 5px;
+  border-radius: 10px;
+  background-color: #29c840;
+  border: 1px solid #25a32d;
+  margin: 0px 5px;
+}
+
+.maxmin{
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 10px;
+  background-color: #29c840;
+  border: 1px solid #25a32d;
+  margin: 0px 5px;
+  display: none;
 }
 
 .safariurlarea{
@@ -231,7 +244,7 @@ body{
   }
   .resizer.left{
     left: -1px;
-    cursor: e-resize;
+    cursor: w-resize;
   }
   .resizer.bottom{
     bottom: -1px;

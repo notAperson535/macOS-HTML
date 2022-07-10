@@ -1,3 +1,5 @@
+createpremadeappwithdockicon("safari","https://google.com/?igu=1","img/safari.png","Safari")
+
 var safariIframe = document.getElementsByClassName('safariappIframe')[0];
 const safaritext = document.getElementsByClassName("safariURL")[0];
 var urlList = new Array();
