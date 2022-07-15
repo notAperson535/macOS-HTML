@@ -151,6 +151,12 @@ function roundedcorners(){
 	app.style.borderRadius = "10px"
 }
 
+window.addEventListener('mousedown', function(e) {
+  if (event.target.closest("." + appname + "app")) {
+      bringtofront();
+}
+});
+
 function getproperties(){
 	topminclose = getComputedStyle(app).getPropertyValue('top');
 	leftminclose = getComputedStyle(app).getPropertyValue('left');
