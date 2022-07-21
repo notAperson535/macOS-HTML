@@ -31,7 +31,7 @@ body{
 }
 
 .menubar p{
-  font-size: 13px;
+  font-size: 12.5px;
 }
 
 .menubarleft{
@@ -171,7 +171,7 @@ body{
     border-radius: 10px;
     background-color: #ff5f57;
     border: 1px solid #e4433b;
-    margin: 0px 5px;
+    margin: 0px 4px;
 }
 
 .minimize{
@@ -182,7 +182,7 @@ body{
     border-radius: 10px;
     background-color: #febc2e;
     border: 1px solid #c29c56;
-    margin: 0px 5px;
+    margin: 0px 4px;
 }
 
 .maximize{
@@ -193,7 +193,7 @@ body{
   border-radius: 10px;
   background-color: #29c840;
   border: 1px solid #25a32d;
-  margin: 0px 5px;
+  margin: 0px 4px;
 }
 
 .maxmin{
@@ -204,7 +204,7 @@ body{
   border-radius: 10px;
   background-color: #29c840;
   border: 1px solid #25a32d;
-  margin: 0px 5px;
+  margin: 0px 4px;
   display: none;
 }
 
