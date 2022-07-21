@@ -27,7 +27,9 @@ function clock(){
     year += 1900
     }
     var monthArray = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12")
-    document.getElementsByClassName("menubardate")[0].innerText = new Date().toLocaleDateString("en-US", { weekday: 'short', month: 'short', day: 'numeric' })
+    var output = new Date().toLocaleDateString("en-US", { weekday: 'short', month: 'short', day: 'numeric' })
+    var outputFormatted = output.replace(/,/g, '');
+    document.getElementsByClassName("menubardate")[0].innerText = outputFormatted
     }
     
     if (window.addEventListener) // W3C standard
