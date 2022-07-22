@@ -39,10 +39,11 @@ function createlaunchpadentry(appname, icon, visualappname){
 
 }
 
-function createdockicon(icon){
+function createdockicon(appname, icon){
   var dockiconimg = document.createElement("img")
   dockiconimg.src = icon
-  dockiconimg.classList.add("dockicons")
+  dockiconimg.classList.add("dockicons", appname + "dockicon")
+  dockiconimg.style.display = "none"
   document.getElementsByClassName("dock")[0].appendChild(dockiconimg)
 }
 
